@@ -1,0 +1,157 @@
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fe5e00;
+    width: 100%;
+}
+
+.ALLcontent {
+    width: 60%;
+    /* Ширина контейнера для всего содержимого */
+    margin: auto;
+    /* Центрирование контейнера */
+}
+
+.locationTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    color: #1e212b;
+    margin-bottom: 20px;
+    /* Отступ между заголовком и контактной информацией */
+}
+
+a {
+    color: inherit;
+    /* Сохраняет цвет текста, определенный родительским элементом */
+    text-decoration: none;
+    /* Убирает подчёркивание */
+    cursor: pointer;
+    /* Добавляет курсор указателя при наведении */
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.workingHours {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: black;
+    text-align: left;
+}
+
+.directionsButton {
+    border-radius: 44px;
+    width: 186px;
+    height: 51px;
+    box-shadow: 0 2px 12px 0 rgba(56, 72, 95, 0.49);
+    background: #fe5e00;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    /* Отступ между контактной информацией и кнопкой */
+}
+
+.footerColumns {
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Выравнивание по верхнему краю */
+    margin-top: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.columnTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.socialNetworks {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    /* Центрирование социальных сетей */
+    align-items: center;
+}
+
+.socialNetworks p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.legalInfo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    /* Центрирование текста */
+    align-items: center;
+    flex-wrap: wrap;
+    /* Перенос на новую строку, если не помещается */
+}
+
+.legalInfo p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-right: 20px;
+    /* Отступ между элементами */
+}
+
+.copyright {
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    text-align: center;
+    color: #fff;
+}

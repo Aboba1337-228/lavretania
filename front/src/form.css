@@ -1,0 +1,123 @@
+/* form.css */
+a {
+    color: inherit; /* Сохраняет цвет текста, определенный родительским элементом */
+    text-decoration: none; /* Убирает подчёркивание */
+    cursor: pointer; /* Добавляет курсор указателя при наведении */
+}
+/* Стили для блока booking */
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+.bookingContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Изменения для мобильных устройств */
+@media (max-width: 768px) {
+    .bookingContent {
+        flex-direction: column;
+    }
+}
+
+.leftBlock,
+.rightBlock {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookingText {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 122%;
+    letter-spacing: 0.01em;
+    color: #000;
+}
+
+#contactText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: 0.01em;
+    color: #000;
+}
+
+.rightBlock form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightBlock form .form-group {
+    margin-bottom: 20px;
+}
+
+.rightBlock form input,
+.rightBlock form textarea {
+    border: 1px solid #03a653;
+    border-radius: 7px;
+    width: 400px;
+    height: 44px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #03a653;
+    padding: 10px;
+}
+
+.rightBlock form textarea {
+    height: 100px;
+}
+
+.rightBlock form p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142%;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+
+.rightBlock form button[type="submit"] {
+    border-radius: 44px;
+    width: 289px;
+    height: 51px;
+    box-shadow: 0 2px 12px 0 rgba(56, 72, 95, 0.49);
+    background: #fe5e00;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Изменения для мобильных устройств */
+@media (max-width: 768px) {
+    .leftBlock,
+    .rightBlock {
+        width: 100%;
+    }
+
+    .rightBlock {
+        margin-top: 20px;
+    }
+}

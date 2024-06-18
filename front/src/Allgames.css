@@ -1,0 +1,54 @@
+/* Allgames.css */
+
+/* Общие стили для сетки игр */
+.gamesGrid {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 10px;
+}
+
+/* Стили для контейнера изображения игры */
+.gamePhotoContainer img {
+  width: 100%;
+  height: auto;
+}
+
+/* Общий контейнер для всех игр */
+.allGamesContainer {
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column; /* Располагаем дочерние элементы в колонку */
+  justify-content: center; /* Центрируем по вертикали */
+  align-items: center; /* Центрируем по горизонтали */
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .gamesGrid {
+    width: 100%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+  }
+}
+
+/* Стили для заголовка "Все игры" */
+.allGamesTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  width: 230px;
+  height: 78px;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+  background: #fe5e00;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+}

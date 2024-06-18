@@ -1,0 +1,256 @@
+/* Header.css */
+.orangeblock {
+    background-color: #FE5E00;
+    padding-bottom: 20px;
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Добавлено для обеспечения переноса на мобильных устройствах */
+    gap: 20px;
+    /* Уменьшил промежуток между элементами для мобильных устройств */
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    /* Уменьшил размер шрифта для мобильных устройств */
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 166px;
+    height: 50px;
+}
+
+.city {
+    display: flex;
+    gap: 10px;
+}
+
+#more {
+    transform: rotate(-180deg);
+}
+
+.Number {
+    display: flex;
+    gap: 10px;
+}
+
+.call {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+#dur{
+    color: white;
+}
+
+#phone {
+    height: 18px;
+}
+
+#path {
+    cursor: pointer;
+}
+
+#vk {
+    cursor: pointer;
+}
+
+#adress {
+    cursor: pointer;
+}
+
+/* Media Queries для адаптивного дизайна */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        /* Переключаемся на столбцовый макет для мобильных устройств */
+        gap: 10px;
+        /* Уменьшаем промежуток между элементами */
+        text-align: center;
+        /* Центрируем текст */
+    }
+
+    #logo {
+        width: 120px;
+        /* Уменьшаем размер логотипа */
+        height: auto;
+        /* Позволяет логотипу сохранять пропорции */
+    }
+
+    .city,
+    .Number {
+        flex-direction: column;
+        /* Переключаемся на столбцовый макет для мобильных устройств */
+        gap: 5px;
+        /* Уменьшаем промежуток между элементами */
+    }
+}
+
+.whiteblock {
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    height: 80px;
+    box-shadow: 0 2px 12px 0 rgba(153, 153, 153, 0.33);
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    position: relative; /* Добавлено для позиционирования псевдоэлементов */
+}
+
+
+.whiteblock button {
+    background-color: rgb(255, 161, 161);
+    border-radius: 30px;
+}
+
+.whiteblock p {
+    margin: 0; /* Убираем внешние отступы у параграфов */
+}
+
+/* Создаем серую вертикальную перегородку */
+.whiteblock::before {
+    content: '';
+    position: absolute;
+    top: 10%; /* Регулируйте положение перегородки по вертикали по вашему усмотрению */
+    bottom: 10%; /* Регулируйте положение перегородки по вертикали по вашему усмотрению */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 80%; /* Регулируйте высоту перегородки по вашему усмотрению */
+    background-color: #ccc;
+    z-index: -1; /* Помещаем перегородку за содержимым блока */
+}
+
+/* Media Queries для адаптивного дизайна */
+
+@media (max-width: 768px) {
+    .whiteblock {
+        width: 90%;
+        max-width: none;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .whiteblock p {
+        margin: 5px 0;
+    }
+}
+
+/* Header.css */
+
+/* Стили для кнопки "Обратный звонок" */
+#phone {
+    background-color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+  }
+  
+  #phone img {
+    margin-right: 5px;
+  }
+  
+  /* Стили для модального окна */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fe5e00; /* Изменено на оранжевый фон */
+    width: 50%;
+    height: 50%;
+    max-width: 600px;
+    max-height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 12px 0 rgba(56, 72, 95, 0.49);
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  label {
+    color: #000; /* Черный цвет для текста */
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Белый фон для текстовых полей */
+  }
+  
+  button[type="submit"] {
+    border: none;
+    border-radius: 44px;
+    width: 234px;
+    height: 51px;
+    box-shadow: 0 2px 12px 0 rgba(56, 72, 95, 0.49);
+    background: #fe5e00;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  
